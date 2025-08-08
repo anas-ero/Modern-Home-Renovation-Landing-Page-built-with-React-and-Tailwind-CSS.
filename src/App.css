@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');* {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+
+/* Layer of the navBar */
+@layer components {
+  .nav-div {
+    @apply  sticky top-0 z-50 flex justify-around p-8 uppercase border-b border-gray-300 ;
+  }
+}
+
+/* Layer of the list of the navBar */
+@layer components {
+  .nav-links {
+    @apply hover:bg-neutral-200 hover:text-neutral-900 p-1.5 duration-400 ;
+  }
+}
+@layer components {
+  .nav-drawer {
+    @apply text-[20px] md:text-[22px]   ;
+  }
+}
