@@ -4,7 +4,9 @@
   font-style: normal;
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 /* Layer of the navBar */
 @layer components {
   .nav-div {
@@ -20,6 +22,6 @@
 }
 @layer components {
   .nav-drawer {
-    @apply text-[20px] md:text-[22px]   ;
+    @apply text-[20px] md:text-[22px] text-2xl font-medium text-gray-800  tracking-wide block py-3 px-6   ;
   }
 }

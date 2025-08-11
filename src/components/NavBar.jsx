@@ -36,9 +36,9 @@ const NavBar = () => {
           </div>
 
           <ul className="hidden lg:flex gap-2">
-            {LINKS.map((item) => (
-              <li>
-                <a href={item.link} className="nav-links">
+            {LINKS.map((item, index) => (
+              <li key={index}>
+                <a href={item.path} className="nav-links">
                   {item.name}
                 </a>
               </li>
@@ -53,12 +53,12 @@ const NavBar = () => {
         </div>
 
         {mobileDrawerOpen && (
-          <div className="fixed right-0 lg:hidden flex flex-col z-20 backdrop-blur-3xl w-full p-12">
-            <div className="flex flex-col items-center">
+          <div className="fixed right-0 lg:hidden flex flex-col z-20 backdrop-blur-xl bg-white/30  w-full p-12">
+            <div className="flex flex-col items-center ">
               <ul>
                 {LINKS.map((item) => (
                   <li>
-                    <a className="nav-drawer" href={item.link}>
+                    <a className="nav-drawer" href={item.path}>
                       {item.name}
                     </a>
                   </li>

@@ -20,23 +20,23 @@ import user6 from "../assets/user6.webp";
 export const LINKS = [
   {
     name: "Services",
-    link: "#services",
+    path: "#services",
   },
   {
     name: "Portfolio",
-    link: "#portfolio",
+    path: "#portfolio",
   },
   {
     name: "About",
-    link: "#about",
+    path: "#about",
   },
   {
     name: "Reviews",
-    link: "#reviews",
+    path: "#reviews",
   },
   {
     name: "Contact",
-    link: "#contact",
+    path: "#contact",
   },
 ];
 
