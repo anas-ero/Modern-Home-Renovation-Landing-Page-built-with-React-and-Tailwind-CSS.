@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Porfolio from "./components/Porfolio";
 import About from "./components/About";
+import Reviews from "./components/Reviews";
 
 
 const App = () => {
@@ -22,6 +23,9 @@ const App = () => {
       </div>
       <div id="about">
         <About />
+      </div>
+      <div id="review">
+        <Reviews/>
       </div>
     </>
   );
